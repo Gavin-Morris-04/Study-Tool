@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="/">Home</a>
+        </div>
+        <div class="nav-right">
+            <a href="/login">Log In</a>
+        </div>
+    </nav>
+
+    <h1>Log In</h1>
+    <form method="POST" action="/login">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" placeholder="Enter your username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password" required><br>
+        <button type="submit">Log In</button>
+    </form>
+
+    <p class="centered-text">
+        Don't have an account? <a href="/signup" class="button-link">Sign Up</a>
+    </p>
+</body>
+</html>

@@ -1,0 +1,199 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+}
+
+/* Navbar styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1f1f1f; /* Dark grey for navbar */
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #1db954; /* Green hover effect */
+}
+
+nav .nav-left, nav .nav-right {
+    display: flex;
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    color: #1db954; /* Green headings */
+    margin-top: 1.5rem;
+}
+
+/* Form styling */
+form {
+    max-width: 400px;
+    margin: 2rem auto;
+    background: #1f1f1f; /* Dark grey form background */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+form input, form button {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input {
+    background-color: #292929; /* Input background */
+    color: #e0e0e0; /* Light text */
+}
+
+form input::placeholder {
+    color: #b0b0b0; /* Placeholder text color */
+}
+
+form button {
+    background-color: #1db954; /* Green button */
+    color: #fff; /* White text */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #14833b; /* Darker green on hover */
+}
+
+/* Lists */
+ul {
+    max-width: 600px;
+    margin: 1rem auto;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    background: #292929; /* Darker grey for list items */
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border: 1px solid #3a3a3a; /* Slightly lighter border */
+    border-radius: 5px;
+}
+
+ul li:hover {
+    background-color: #1db954; /* Green hover effect for list items */
+    color: #fff;
+}
+
+/* Buttons */
+a.button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #1db954;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+a.button:hover {
+    background-color: #14833b; /* Darker green on hover */
+}
+
+/* Hero section styling */
+.hero {
+    text-align: center;
+    margin: 3rem auto;
+    padding: 2rem;
+    color: #e0e0e0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1db954; /* Vibrant green for the heading */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Big button styling */
+.big-button {
+    display: inline-block;
+    background-color: #1db954;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.big-button:hover {
+    background-color: #14833b; /* Darker green on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Centered text styling */
+.centered-text {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
+.centered-text a.button-link {
+    color: #1db954; /* Green for the link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.centered-text a.button-link:hover {
+    color: #14833b; /* Darker green on hover */
+    text-decoration: underline;
+}
+
+/* Class buttons on the home page */
+.class-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 0;
+    justify-content: center;
+}
+
+.class-button {
+    background-color: #1db954;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.class-button:hover {
+    background-color: #14833b;
+    transform: scale(1.05);
+}
+

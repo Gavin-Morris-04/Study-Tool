@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="/">Home</a>
+        </div>
+        <div class="nav-right">
+            {% if user %}
+                <a href="/logout">Log Out</a>
+            {% else %}
+                <a href="/login">Log In</a>
+            {% endif %}
+        </div>
+    </nav>
+
+    {% if user %}
+        <h1>Welcome, {{ user.username }}!</h1>
+
+        <h2>Your Classes</h2>
+        <div class="class-buttons">
+            {% for cls in classes %}
+                <a href="/class/{{ cls.id }}" class="class-button">{{ cls.title }}</a>
+            {% endfor %}
+        </div>
+
+        <h2>Add a New Class</h2>
+        <form method="POST" action="/add_class">
+            <input type="text" name="class_name" placeholder="Class name" required>
+            <button type="submit">Add Class</button>
+        </form>
+    {% else %}
+        <div class="hero">
+            <h1>Welcome to the Web Application</h1>
+            <p>Please sign up or log in to get started.</p>
+            <a href="/signup" class="big-button">Sign Up Now</a>
+        </div>
+    {% endif %}
+</body>
+</html>
